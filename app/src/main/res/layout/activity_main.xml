@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+android:layout_width="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView1"
+    android:text="Top Content Here"
+    android:background="#F44336"
+    android:layout_centerHorizontal="true"
+    android:textSize="20dp"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView2"
+    android:text="Bottom Content Here"
+    android:background="#78F436"
+    android:layout_centerHorizontal="true"
+    android:textSize="20dp"
+    android:layout_alignParentBottom="true"
+    />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:text="Three"
+            android:background="#FF9800"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/textView3"
+            android:textSize="20dp"
+            />
+        <View
+            android:layout_height="1dp"
+            android:layout_width="10dp"
+            />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00BCD4"
+            android:text="Second"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            />
+        <View
+            android:layout_height="1dp"
+            android:layout_width="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:text="First"
+            android:background="#4CAF50"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/textView3"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
+
+
